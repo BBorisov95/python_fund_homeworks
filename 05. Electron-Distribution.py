@@ -1,0 +1,2 @@
+electrons = int(input())
+
