@@ -1,10 +1,13 @@
+import math
 electrons = int(input())
 
-electron_in_shells = []
+electron_in_shells = [shell for shell in range(1, electrons +1) if math.ceil((2 * electrons **2) / 100)) ]
 
-for electron in range(electrons)
-  for shell_index in electron_in_shells:
-    max_num_in_shell = 2 * shell_index**2
+while sum(electron_in_shells != electrons
+
+  for electron in range(electrons):
+    for shell_index in electron_in_shells:
+      max_num_in_shell = 2 * shell_index**2
       if electron_in_shells[shell_index] < max_num_in_shell
          electron_in_shells[shell_index].append(electron)
   
