@@ -8,23 +8,19 @@ cupid_position = 0
 while command != 'Love!':
     
     jump, lenght = command.split()
-    lenght = int(lenght)        
-    
-    #for home_index in range(0, len(int_neighborhood)):
+    lenght = int(lenght)
         
-    cupid_position += lenght
-        
-    if cupid_position + 1 > len(int_neighborhood):
+    if cupid_position >= len(int_neighborhood):
        cupid_position = 0
         
     if int_neighborhood[cupid_position] == 0:
         print(f'Place {cupid_position} already had Valentine\'s day.')
-    elif cupid_position <= int_neighborhood[cupid_position]:
+    else:
+
         int_neighborhood[cupid_position] -= 2
         if int_neighborhood[cupid_position] == 0:
            print(f'Place {cupid_position} has Valentine\'s day.')
-               
-    #cupid_position = home_index + 1
+
             
     
     command = input()
