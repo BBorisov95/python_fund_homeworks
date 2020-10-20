@@ -27,11 +27,9 @@ while command != 'Love!':
     command = input()
     
 print(f'Cupid\'s last position was {cupid_position}.')
-fail_homes = 0
+fail_homes = [home for home in int_neighborhood if home !=0]
 
-for homes in int_neighborhood:
-   if homes == 0:
-      continue
-   elif homes != 0:
-       fail_homes += 1
-print(f'Cupid has failed {fail_homes} places.')
+if fail_homes > 0:
+    print(f'Cupid has failed {fail_homes} places.')
+else:
+    print('Mission was successful.')
