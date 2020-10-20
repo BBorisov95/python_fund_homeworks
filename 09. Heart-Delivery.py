@@ -14,7 +14,7 @@ while command != 'Love!':
         
     cupid_position += lenght
         
-    if cupid_position > len(int_neighborhood):
+    if cupid_position + 1 > len(int_neighborhood):
        cupid_position = 0
         
     if int_neighborhood[cupid_position] == 0:
@@ -24,7 +24,7 @@ while command != 'Love!':
         if int_neighborhood[cupid_position] == 0:
            print(f'Place {cupid_position} has Valentine\'s day.')
                
-    cupid_position = home_index + 1
+    #cupid_position = home_index + 1
             
     
     command = input()
