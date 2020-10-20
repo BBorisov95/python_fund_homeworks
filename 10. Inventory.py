@@ -43,4 +43,4 @@ while command != 'Craft!':
 
     command = input()
 
-print(journal)
+print(', '.join(journal))
