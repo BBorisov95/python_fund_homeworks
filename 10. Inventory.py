@@ -25,21 +25,21 @@ def renew(item):
 def combine_items(item):
     old_item, new_item = item.split(':')
     if old_item in journal:
-       journal.insert(journal.index('old_item')+1  ,new_item)
+       journal.insert(journal.index(old_item)+1, new_item)
     return journal
 
 while command != 'Craft!':
     
     action, item = command.split(' - ')
     
-    if action = 'Collect':
+    if action == 'Collect':
        collect(item)
-    elif action = 'Drop':
+    elif action == 'Drop':
        drop(item)
-    elif action = 'Combine Items':
+    elif action == 'Combine Items':
        combine_items(item)
-    elif action = 'Renew':
-       combine_items(item)
+    elif action == 'Renew':
+       renew(item)
 
     command = input()
 
