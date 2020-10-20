@@ -8,9 +8,9 @@ cupid_position = None
 while command != 'Love!':
     
     action, lenght = command.split()
-            
+    lenght = int(lenght)        
     
-    for home_index in range(0, int_neighborhood, lenght):
+    for home_index in range(0, len(int_neighborhood), lenght):
         
         if lenght > len(int_neighborhood):
             home_index == 0
