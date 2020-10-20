@@ -15,13 +15,13 @@ while command != 'Love!':
         cupid_position += lenght
         
         if cupid_position > len(int_neighborhood):
-            home_index == 0
+            home_index = 0
         
-        if int_neighborhood[home_index] == 0:
+        if int_neighborhood[cupid_position] == 0:
             print(f'Place {home_index} already had Valentine\'s day.')
-        elif cupid_position <= int_neighborhood[home_index]:
-           int_neighborhood[home_index] -= 2
-           if int_neighborhood[home_index] == 0:
+        elif cupid_position <= int_neighborhood[cupid_position]:
+           int_neighborhood[cupid_position] -= 2
+           if int_neighborhood[cupid_position] == 0:
                print(f'Place {home_index} has Valentine\'s day.')
                
         cupid_position = home_index + 1
