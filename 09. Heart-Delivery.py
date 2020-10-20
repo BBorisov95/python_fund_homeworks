@@ -12,18 +12,15 @@ while command != 'Love!':
 
     cupid_position = cr + lenght
         
-    for index in range(len(int_neighborhood)):
-    	
-        if cupid_position > index:
-            cupid_position = 0
-        break
+    if cupid_position > len(int_neighborhood)-1:
+        cupid_position = 0
         	
+    if int_neighborhood[cupid_position] == 0:
+        print(f'Place {cupid_position} already had Valentine\'s day.')
+    else:
+        int_neighborhood[cupid_position] -= 2
         if int_neighborhood[cupid_position] == 0:
-        	print(f'Place {cupid_position} already had Valentine\'s day.')
-        else:
-        	int_neighborhood[cupid_position] -= 2
-        	if int_neighborhood[cupid_position] == 0:
-        		print(f'Place {cupid_position} has Valentine\'s day.')
+           print(f'Place {cupid_position} has Valentine\'s day.')
     
     cr = cupid_position
     
