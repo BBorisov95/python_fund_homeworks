@@ -30,6 +30,7 @@ print(f'Cupid\'s last position was {cupid_position}.')
 fail_homes = [x for x in int_neighborhood if x !=0]
 
 if len(fail_homes) > 0:
+    #fixed
     print(f'Cupid has failed {len(fail_homes)} places.')
 else:
     print('Mission was successful.')
